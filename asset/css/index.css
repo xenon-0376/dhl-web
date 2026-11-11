@@ -1,0 +1,374 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Olas css */
+.divdhl{
+   position:static;
+   background-color:gold;
+   display:flex; 
+   justify-content:space-between;
+   height:70px;
+   padding-top:1.5rem;
+   padding-left:2rem;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+}
+
+.navdhl {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    height: 80px;
+    padding: 0 55px;
+}
+
+.navlinks {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.navlinks a {
+    color: black;
+    text-decoration: none;
+}
+
+.shipmenu {
+    position: static;
+}
+
+.shipheader {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    min-height: 430px;
+    padding: 30px 3.5%;
+
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+
+.shipmenu:hover .shipheader {
+    display: flex;
+}
+
+.sub_1 {
+    flex: 0 0 26%;
+    margin-top: 0;
+    padding: 0 25px;
+    position: relative;
+}
+
+.sub_2, .sub_3, .sub_4 {
+    flex: 1;
+    min-width: 0;
+    padding: 25px;
+    position: relative;
+
+    
+}
+
+
+.learn{
+    margin-top:-35px;
+}
+
+.sub_1 h3 {
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+    
+
+.sub_1 a{
+    text-decoration: none;
+    color:black;
+    box-shadow: inset;
+
+}
+
+.sub_1 i{
+    color:red;
+    font-size:20px;
+}
+
+.sub_1::after {
+    content: "";
+    position: absolute;
+    right:0;
+    top:10px;
+    bottom:20px;
+    border-right:1px solid grey;
+}
+
+.sub_2::after {
+    content: "";
+    position: absolute;
+    right:0;
+    top:20px;
+    bottom:20px;
+    border-right:1px solid grey;
+}
+
+.sub_3::after {
+    content: "";
+    position: absolute;
+    right:0;
+    top:20px;
+    bottom:20px;
+    border-right:1px solid grey;
+}
+
+.sub_4::after {
+    content: "";
+    position: absolute;
+    right:0;
+    top:30px;
+    bottom:20px;
+    border-right:1px solid grey;
+}
+
+.sub_2 a,.sub_3 a,.sub_4 a{
+    text-decoration: none;
+    border-radius:8px;
+    background-color: white;
+    padding:10px 12px;
+    color:red;
+    border:1px solid red;
+    font-weight:500;
+    font-size:15px;
+  
+}
+
+.sub_2 a:hover,.sub_3 a:hover,.sub_4 a:hover{
+    background-color:red;
+    color:white;
+    border:1px solid red;
+    transform: scale(1.15);
+
+}
+
+
+.quote{
+    border-radius:10px;
+    color:red;
+    padding:10px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.452);
+}
+
+.quote:hover{
+    color:red;
+}
+
+
+.shipnow{
+    border-radius:10px;
+    color:red;
+    padding:10px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.452);
+}
+
+/* TABLET RESPONSIVENESS */
+@media screen and (max-width: 900px) {
+
+    .divdhl {
+        padding: 15px 20px;
+        height: auto;
+        min-height: 70px;
+        align-items: center;
+    }
+
+    .menu a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .navdhl {
+        padding: 0 25px;
+    }
+
+    .navlinks {
+        gap: 25px;
+    }
+    .navlinks a {
+    color: black;
+    text-decoration: none;
+    }
+
+
+
+    .shipheader {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 25px;
+        min-height: auto;
+        max-height: 75vh;
+        overflow-y: auto;
+    }
+
+    .sub_1 {
+        flex: 0 0 45%;
+    }
+
+    .sub_2, .sub_3, .sub_4 {
+        flex: 0 0 45%;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    /* TOP HEADER */
+    .divdhl {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .divdhl img {
+        max-width: 130px;
+        height: auto;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .menu a {
+        padding: 5px;
+        font-size: 13px;
+    }
+
+
+    /* MAIN NAVIGATION */
+    .navdhl {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        height: auto;
+        padding: 15px 20px;
+        gap: 20px;
+    }
+
+    .navlinks {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .navlinks a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .customerlogins {
+        padding: 0;
+    }
+
+
+    /* SHIP MENU */
+    .shipmenu {
+        position: static;
+        width: 100%;
+    }
+
+    .shipheader {
+        display: none;
+        flex-direction: column;
+        position: static;
+        width: 100%;
+        min-height: auto;
+        max-height: none;
+        overflow: visible;
+        padding: 15px 0;
+        gap: 20px;
+        box-shadow: none;
+    }
+
+    .shipmenu:hover .shipheader,
+    .shipmenu:focus-within .shipheader {
+        display: flex;
+    }
+
+
+    /* FOUR SHIPPING SECTIONS */
+    .sub_1,
+    .sub_2,
+    .sub_3,
+    .sub_4 {
+        flex: none;
+        width: 100%;
+        padding: 20px 10px;
+        margin-top: 0;
+    }
+
+    .sub_1 h3 {
+        margin-bottom: 20px;
+    }
+
+    .learn {
+        margin-top: 0;
+    }
+
+    .sub_1::after,
+    .sub_2::after,
+    .sub_3::after,
+    .sub_4::after {
+        display: none;
+    }
+
+    .sub_1,
+    .sub_2,
+    .sub_3 {
+        border-bottom: 1px solid lightgrey;
+    }
+
+
+    /* SHIPPING BUTTONS */
+    .quote,
+    .shipnow {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        max-width: 280px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .sub_2 a,
+    .sub_3 a,
+    .sub_4 a {
+        display: inline-block;
+        font-size: 13px;
+    }
+
+}
